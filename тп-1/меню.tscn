@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cebfbet5b77nx"]
+
+[ext_resource type="Script" uid="uid://dbul0vokhjcfe" path="res://меню.gd" id="1_x2lkp"]
+
+[node name="Меню" type="Node2D" unique_id=2114403662]
+script = ExtResource("1_x2lkp")
+
+[node name="Выход" type="Button" parent="." unique_id=383720697]
+offset_left = 155.0
+offset_top = 256.0
+offset_right = 397.0
+offset_bottom = 333.0
+text = "Выход"
+
+[node name="Старт" type="Button" parent="." unique_id=1486390100]
+offset_left = 455.0
+offset_top = 256.0
+offset_right = 697.0
+offset_bottom = 333.0
+text = "Старт"
+
+[node name="Настройки" type="Button" parent="." unique_id=885766587]
+offset_left = 744.0
+offset_top = 256.0
+offset_right = 986.0
+offset_bottom = 333.0
+text = "Настройки"
+
+[connection signal="pressed" from="Выход" to="." method="_on_выход_pressed"]
+[connection signal="pressed" from="Старт" to="." method="_on_старт_pressed"]

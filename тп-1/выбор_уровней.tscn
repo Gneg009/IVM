@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ct5ki36y5wcst"]
+
+[ext_resource type="Script" uid="uid://7q2ltnjyvw11" path="res://выбор_уровней.gd" id="1_6xwdm"]
+
+[node name="Выбор уровней" type="Node2D" unique_id=493081866]
+script = ExtResource("1_6xwdm")
+
+[node name="Назад" type="Button" parent="." unique_id=1136394261]
+offset_right = 92.0
+offset_bottom = 86.0
+theme_override_font_sizes/font_size = 60
+text = "<"
+
+[connection signal="pressed" from="Назад" to="." method="_on_назад_pressed"]
